@@ -6,7 +6,7 @@ void setup() {
   size(1000, 500);
   // Parameters go inside the parentheses when the object is constructed.
   CannonBall[0] = new ball(color(0, 0, 0), 40, 460, PI/4, 0);
-  cannon1 = new cannon(color(0, 0, 0), 0, 0, PI/4);
+  cannon1 = new cannon(color(0, 0, 0), 0, 0, 1.13);
 }
 void draw() {
   background(255);
