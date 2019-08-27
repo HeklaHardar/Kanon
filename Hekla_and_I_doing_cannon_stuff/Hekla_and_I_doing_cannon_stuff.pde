@@ -64,10 +64,12 @@ class cannon {
     angle = tempAngle;
   }
   void display() {
+    PImage K;
     stroke(0);
     translate(40, height - 40);
     rotate(angle);
     rectMode(CENTER);
+    
     rect(xpos, ypos, 7, 21);
     fill(c);
   }
