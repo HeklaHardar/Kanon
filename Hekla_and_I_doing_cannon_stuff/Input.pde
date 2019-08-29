@@ -18,3 +18,10 @@ void keyReleased(){
     }
   }
 }
+
+void mousePressed(){
+  BallList.add(new Ball(rotation.copy().mult(5)));
+  println(mouseX);
+  println(mouseY);
+  
+}
