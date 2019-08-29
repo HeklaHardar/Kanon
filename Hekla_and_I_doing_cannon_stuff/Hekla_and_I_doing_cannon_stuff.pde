@@ -1,26 +1,23 @@
-cannon cannon1;
+//cannon cannon1;
+Kanon Kanon = new Kanon();
 boolean keyUp = true;
-
-PImage Kanon;
+PImage Canon;
 
 void setup() {
   size(1000, 500);
  
-  cannon1 = new cannon(color(0, 0, 0), 0, 0, 1.13);
-  Kanon = loadImage("smallcanon.png");
+//  cannon1 = new cannon(color(0, 0, 0), 0, 0, 1.13);
+  Canon = loadImage("smallcanon.png");
 }
+
 void draw() {
   background(255);
   fill(224, 155, 80);
   rect(0, 500, 2000, 80);
   fill(0);
   
-  pushMatrix();
-  translate(20,400);
-  image(Kanon,0,0);
-  popMatrix();
-  
-  
+  Kanon.update();
+}
   /*
   cannon1.display();
   if (keyPressed == true) {
@@ -65,3 +62,4 @@ class cannon {
     fill(255,255,0);
   }
 }
+*/
