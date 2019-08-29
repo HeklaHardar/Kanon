@@ -5,14 +5,13 @@ PImage Kanon;
 
 void setup() {
   size(1000, 500);
-  // Parameters go inside the parentheses when the object is constructed.
  
   cannon1 = new cannon(color(0, 0, 0), 0, 0, 1.13);
-  Kanon=loadImage("smallcanon.png");
+  Kanon = loadImage("smallcanon.png");
 }
 void draw() {
   background(255);
-  fill(204, 102, 0);
+  fill(224, 155, 80);
   rect(0, 500, 2000, 80);
   fill(0);
   
@@ -21,6 +20,8 @@ void draw() {
   image(Kanon,0,0);
   popMatrix();
   
+  
+  /*
   cannon1.display();
   if (keyPressed == true) {
     if (key == CODED && keyCode == LEFT) {
@@ -61,6 +62,6 @@ class cannon {
     rotate(angle);
     rectMode(CENTER);
     rect(xpos, ypos, 7, 21);
-    fill(c);
+    fill(255,255,0);
   }
 }
