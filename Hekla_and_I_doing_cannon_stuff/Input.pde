@@ -4,6 +4,10 @@ void keyPressed(){
       Kanon.pressingLeft = true;
     } else if (keyCode == RIGHT){
       Kanon.pressingRight = true;
+    }else if(keyCode == UP){
+      
+      // LAV BOLD
+        BallList.add(new Ball(rotation.copy().mult(5)));
     }
   }
 }
@@ -20,8 +24,6 @@ void keyReleased(){
 }
 
 void mousePressed(){
-  BallList.add(new Ball(rotation.copy().mult(5)));
-  println(mouseX);
-  println(mouseY);
+
   
 }
