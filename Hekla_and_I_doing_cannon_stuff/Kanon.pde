@@ -11,10 +11,10 @@ void update(){
   if (pressingRight == true){
     angle += 0.1;
   }
-  if (angle > 0.3){
-    angle = 0.3;
-  } else if (angle < -0.65){
-    angle = -0.65;
+  if (angle > 0.4){
+    angle = 0.4;
+  } else if (angle < -1.1){
+    angle = -1.1;
   }
   pushMatrix();
   translate(80,400);

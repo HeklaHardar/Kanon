@@ -1,7 +1,7 @@
 class Ball {
   
   PVector pos, vel, grav;
-
+  float radius = 12.5;
   
   
   Ball(PVector velocity) {
@@ -14,7 +14,13 @@ class Ball {
   void update(){
     vel.add(grav);
     pos.add(vel);
+    
+    if (pos.y + radius> height-height/8){
+      pos.y = height-height/8-radius;
+      vel.y *= -1;
+    }
+    
     fill(0);
-    ellipse(pos.x, pos.y, 25, 25);
+    ellipse(pos.x, pos.y, radius*2, radius*2);
   }
 }
