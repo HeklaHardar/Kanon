@@ -17,7 +17,8 @@ class Ball {
     
     if (pos.y + radius> height-height/8){
       pos.y = height-height/8-radius;
-      vel.y *= -1;
+      vel.y = -vel.y + 2;
+      vel.x*= 0.99;
     }
     
     fill(0);
