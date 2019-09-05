@@ -21,6 +21,6 @@ class Ball {
     }
     
     fill(0);
-    ellipse(pos.x, pos.y, radius*2, radius*2);
+    rect(pos.x, pos.y, radius*2, radius*2);
   }
 }
