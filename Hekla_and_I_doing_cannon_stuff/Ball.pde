@@ -18,6 +18,8 @@ class Ball {
     if (pos.y + radius> height-height/8){
       pos.y = height-height/8-radius;
       vel.y = -vel.y + 2;
+      
+      //Procent af hastighed frataget. (-1% hvis *0.99)
       vel.x*= 0.99;
     }
     
