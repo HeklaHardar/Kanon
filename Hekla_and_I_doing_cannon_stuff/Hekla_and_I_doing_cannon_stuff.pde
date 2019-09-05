@@ -22,13 +22,8 @@ void setup() {
 void draw() {
   background(255);
   thisRot = Kanon.angle;
-  if (thisRot == lastRot-0.1){
-    rotation.rotate(-0.1);
-  }
-  if (thisRot == lastRot+0.1){
-    rotation.rotate(+0.1);
-  }
-  lastRot = Kanon.angle;
+
+  rotation.set(1,0).rotate(thisRot+PI/-6);
   
   fill(0,255,0);
   rect(0,height-height/8,width,height);
