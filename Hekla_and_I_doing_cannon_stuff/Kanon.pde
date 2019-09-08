@@ -2,9 +2,12 @@ class Kanon {
  
   float angle;
   boolean pressingLeft, pressingRight;
-  
+
+
 void update(){
-   
+
+  // Her bruger vi booleans "pressingLeft" og "pressingRight" som Left og Right keys.
+  //  Disse drejer på vores kanon med en vis vinkel.
   if (pressingLeft == true){
     angle -= 0.1;
   }
@@ -16,6 +19,8 @@ void update(){
   } else if (angle < -1.1){
     angle = -1.1;
   }
+  
+  // Her har vi insat vores kanon med vinkel og position "translate".
   pushMatrix();
   translate(80,400);
   rotate(angle);

@@ -1,3 +1,5 @@
+
+//Giver programmet evnen til at bruge de nævnte keys trykket.
 void keyPressed(){
   if (key == CODED){
     if (keyCode == LEFT){
@@ -12,7 +14,7 @@ void keyPressed(){
   }
 }
 
-
+//Giver programmet evnen til at bruge de nævnte keys released.
 void keyReleased(){
   if (key == CODED){
     if (keyCode == LEFT){
@@ -21,9 +23,4 @@ void keyReleased(){
       Kanon.pressingRight = false;
     }
   }
-}
-
-void mousePressed(){
-
-  
 }
