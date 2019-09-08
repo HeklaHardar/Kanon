@@ -23,7 +23,13 @@ class Ball {
       vel.x*= 0.99;
     }
     
-    fill(0);
-    ellipse(pos.x, pos.y, radius*2, radius*2);
+    
+    fill(0,85,89);
+    pushMatrix();
+    translate(pos.x,pos.y);
+    rotate(random(0,360));
+    ellipse(0, 0, radius*2, radius*2);
+    popMatrix();
+
   }
 }

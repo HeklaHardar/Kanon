@@ -26,9 +26,9 @@ void draw() {
   rotation.set(1,0).rotate(thisRot+PI/-6);
   
   fill(0,255,0);
+  translate(0,0);
   rect(0,height-height/8,width,height);
   for (int i = 0; i < BallList.size(); i++){
     BallList.get(i).update();
-  }
-  Kanon.update();
+  } Kanon.update();
 }
